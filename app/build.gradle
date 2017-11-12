@@ -7,6 +7,15 @@ def getDate() {
 }
 
 android {
+    //渠道Flavors
+    productFlavors {
+        xiaomi {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "xiaomi"]
+        }
+        wandoujia {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE:    "wandoujia"]
+        }
+    }
     signingConfigs {
         release {
             keyAlias 'safetravel'
