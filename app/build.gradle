@@ -9,11 +9,11 @@ def getDate() {
 android {
     //渠道Flavors
     productFlavors {
+        commonsoon {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "commonsoon"]
+        }
         xiaomi {
             manifestPlaceholders = [UMENG_CHANNEL_VALUE: "xiaomi"]
-        }
-        wandoujia {
-            manifestPlaceholders = [UMENG_CHANNEL_VALUE:    "wandoujia"]
         }
     }
     signingConfigs {
